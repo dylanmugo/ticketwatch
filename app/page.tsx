@@ -70,9 +70,12 @@ export default function Home() {
               </div>
             </div>
 
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition mb-4 w-full md:w-auto">
+            <a 
+              href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets" 
+              className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition mb-4"
+            >
               Start Watching Now →
-            </button>
+            </a>
             <p className="text-sm text-gray-400">Takes 30 seconds. No credit card needed.</p>
           </div>
 
@@ -134,9 +137,12 @@ export default function Home() {
                   <span>✗</span> Multiple watches
                 </li>
               </ul>
-              <button className="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition">
+              <a 
+                href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20free" 
+                className="block w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition text-center"
+              >
                 Start Free
-              </button>
+              </a>
             </div>
 
             {/* Premium Tier */}
@@ -161,9 +167,12 @@ export default function Home() {
                   <span>✓</span> Priority support
                 </li>
               </ul>
-              <button className="w-full bg-white hover:bg-gray-100 text-purple-600 font-bold py-2 px-4 rounded transition">
+              <a 
+                href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20upgrade%20to%20premium" 
+                className="block w-full bg-white hover:bg-gray-100 text-purple-600 font-bold py-2 px-4 rounded transition text-center"
+              >
                 Upgrade Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -232,9 +241,12 @@ export default function Home() {
         <h2 className="text-4xl font-black text-white mb-6">Ready to Never Miss a Gig?</h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join hundreds of Irish music fans who've already found their next favorite concert.</p>
         
-        <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition mb-6">
+        <a 
+          href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets" 
+          className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition mb-6"
+        >
           Start Watching Now (Free)
-        </button>
+        </a>
         
         <p className="text-gray-400">30 seconds to set up. No credit card needed.</p>
       </section>

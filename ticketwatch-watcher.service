@@ -1,0 +1,20 @@
+[Unit]
+Description=TicketWatch Watcher Service
+After=network.target
+StartLimitInterval=0
+
+[Service]
+Type=oneshot
+User=admin
+WorkingDirectory=/home/admin/ticketwatch
+ExecStart=/usr/bin/python3 /home/admin/ticketwatch/watcher.py
+StandardOutput=append:/home/admin/ticketwatch/logs/watcher.log
+StandardError=append:/home/admin/ticketwatch/logs/watcher.log
+SyslogIdentifier=ticketwatch-watcher
+
+# If service fails, restart after delay
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import QRCode from 'qrcode.react';
 import { useState } from 'react';
 
 export default function Home() {
@@ -79,16 +78,16 @@ export default function Home() {
 
           {/* Right: WhatsApp QR + Features */}
           <div className="flex flex-col items-center space-y-8">
-            {/* QR Code */}
+            {/* WhatsApp CTA */}
             <div className="bg-white p-6 rounded-lg shadow-xl">
-              <p className="text-center text-sm font-bold text-gray-800 mb-4">Scan to Chat on WhatsApp</p>
-              <QRCode 
-                value="https://wa.me/353858536569?text=Hi%20TicketWatch" 
-                size={256}
-                level="H"
-                includeMargin={true}
-              />
-              <p className="text-center text-xs text-gray-600 mt-4">or message +353 85 853 6569</p>
+              <p className="text-center text-sm font-bold text-gray-800 mb-4">Start on WhatsApp</p>
+              <a 
+                href="https://wa.me/353858536569?text=Hi%20TicketWatch" 
+                className="block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-8 rounded-lg text-center transition mb-4"
+              >
+                💬 Message us on WhatsApp
+              </a>
+              <p className="text-center text-xs text-gray-600">+353 85 853 6569</p>
             </div>
 
             {/* Stats */}

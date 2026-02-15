@@ -1,4 +1,5 @@
 import GlassCard from '../components/GlassCard';
+import { WHATSAPP_LINKS } from '@/lib/config';
 
 export default function PricingPage() {
   return (
@@ -38,7 +39,7 @@ export default function PricingPage() {
               </li>
             </ul>
             <a
-              href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20free"
+              href={WHATSAPP_LINKS.free}
               className="block w-full text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition"
             >
               Start Free
@@ -75,7 +76,7 @@ export default function PricingPage() {
                 </li>
               </ul>
               <a
-                href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20upgrade%20to%20premium"
+                href={WHATSAPP_LINKS.premium}
                 className="block w-full text-center bg-gradient-to-r from-green-500 to-orange-500 hover:from-green-600 hover:to-orange-600 text-white font-bold py-3 px-6 rounded-full transition shadow-lg"
               >
                 Upgrade Now

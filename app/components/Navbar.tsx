@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { WHATSAPP_LINKS } from '@/lib/config';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -39,7 +40,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets"
+            href={WHATSAPP_LINKS.default}
             className="bg-gradient-to-r from-green-500 to-orange-500 hover:from-green-600 hover:to-orange-600 text-white font-bold py-2 px-5 rounded-full text-sm transition"
           >
             Get Started
@@ -76,7 +77,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets"
+            href={WHATSAPP_LINKS.default}
             className="block text-center bg-gradient-to-r from-green-500 to-orange-500 text-white font-bold py-3 px-5 rounded-full text-sm transition"
           >
             Get Started

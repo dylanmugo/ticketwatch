@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { WHATSAPP_LINKS } from '@/lib/config';
 
 export default function Footer() {
   return (
@@ -26,10 +27,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-700 mb-3">Contact</h4>
             <a
-              href="https://wa.me/353858536569?text=Hi%20TicketWatch"
+              href={WHATSAPP_LINKS.start}
               className="text-sm text-gray-500 hover:text-green-600 transition"
             >
-              WhatsApp: +353 85 853 6569
+              WhatsApp: {WHATSAPP_LINKS.display}
             </a>
           </div>
         </div>

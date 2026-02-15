@@ -1,4 +1,5 @@
 import GlassCard from './components/GlassCard';
+import { WHATSAPP_LINKS } from '@/lib/config';
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
             </div>
 
             <a
-              href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets"
+              href={WHATSAPP_LINKS.default}
               className="inline-block bg-gradient-to-r from-green-500 to-orange-500 hover:from-green-600 hover:to-orange-600 text-white font-bold py-4 px-8 rounded-full text-lg transition shadow-lg hover:shadow-xl"
             >
               Start Watching Now
@@ -64,12 +65,12 @@ export default function Home() {
             <GlassCard className="p-8 w-full max-w-sm" variant="strong">
               <p className="text-center text-sm font-bold text-gray-700 mb-4">Start on WhatsApp</p>
               <a
-                href="https://wa.me/353858536569?text=Hi%20TicketWatch"
+                href={WHATSAPP_LINKS.start}
                 className="block bg-gradient-to-r from-green-500 to-orange-500 hover:from-green-600 hover:to-orange-600 text-white font-bold py-4 px-8 rounded-full text-center transition shadow-lg mb-4"
               >
                 Message us on WhatsApp
               </a>
-              <p className="text-center text-xs text-gray-500">+353 85 853 6569</p>
+              <p className="text-center text-xs text-gray-500">{WHATSAPP_LINKS.display}</p>
             </GlassCard>
 
             {/* Stats */}
@@ -120,7 +121,7 @@ export default function Home() {
             Join hundreds of Irish music fans who've already found their next favorite concert.
           </p>
           <a
-            href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets"
+            href={WHATSAPP_LINKS.default}
             className="inline-block bg-gradient-to-r from-green-500 to-orange-500 hover:from-green-600 hover:to-orange-600 text-white font-bold py-4 px-10 rounded-full text-lg transition shadow-lg hover:shadow-xl mb-4"
           >
             Start Watching Now (Free)

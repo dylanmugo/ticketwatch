@@ -1,4 +1,5 @@
 import GlassCard from '../components/GlassCard';
+import { WHATSAPP_LINKS } from '@/lib/config';
 
 export default function HowItWorksPage() {
   const steps = [
@@ -95,7 +96,7 @@ export default function HowItWorksPage() {
           <h2 className="text-3xl font-black text-gray-900 mb-4">Ready to Try?</h2>
           <p className="text-gray-600 mb-8">It takes 30 seconds to set up your first watch.</p>
           <a
-            href="https://wa.me/353858536569?text=Hi%20TicketWatch%20I%20want%20to%20start%20watching%20for%20tickets"
+            href={WHATSAPP_LINKS.default}
             className="inline-block bg-gradient-to-r from-green-500 to-orange-500 hover:from-green-600 hover:to-orange-600 text-white font-bold py-4 px-10 rounded-full text-lg transition shadow-lg"
           >
             Start on WhatsApp
